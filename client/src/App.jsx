@@ -1,5 +1,5 @@
 function App() {
-  return <h1>Welcome to Wild Series !</h1>;
+  return <h1>Coucou c'est nous, c'est Derrick !</h1>;
 }
 
 export default App;
