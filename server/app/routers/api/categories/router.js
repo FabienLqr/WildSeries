@@ -6,7 +6,10 @@ const router = express.Router();
 // Define Your API Routes Here
 /* ************************************************************************* */
 
-/* Here you code */
+const { browse, read } = require("../../../controllers/categoryAction");
+
+router.get("/", browse);
+router.get("/:id", read);
 
 /* ************************************************************************* */
 
