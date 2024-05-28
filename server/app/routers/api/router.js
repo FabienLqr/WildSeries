@@ -11,15 +11,11 @@ router.get("/", sayWelcome);
 /* ************************************************************************* */
 
 const programsRouter = require("./programs/router");
-
-router.use("/programs", programsRouter);
-
 const itemsRouter = require("./items/router");
-
-router.use("/items", itemsRouter);
-
 const categoriesRouter = require("./categories/router");
 
+router.use("/programs", programsRouter);
+router.use("/items", itemsRouter);
 router.use("/categories", categoriesRouter);
 
 /* ************************************************************************* */

@@ -15,11 +15,6 @@ router.get("/", browse);
 // Route to get one program
 router.get("/:id", read);
 
-// Route to get category
-const categoriesRouter = require("../../../controllers/categoryAction");
-
-router.use("/categories", categoriesRouter);
-
 /* ************************************************************************* */
 
 module.exports = router;
