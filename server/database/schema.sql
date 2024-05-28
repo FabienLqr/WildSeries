@@ -23,5 +23,6 @@ CREATE TABLE program(
   poster VARCHAR(255) NOT NULL,
   country VARCHAR(255) NOT NULL,
   year INT NULL,
-  category_id INT NULL
+  category_id INT NULL,
+  FOREIGN KEY(category_id) REFERENCES category(id)
 );
