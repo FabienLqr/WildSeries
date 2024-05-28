@@ -27,9 +27,6 @@ CREATE TABLE program(
   FOREIGN KEY(category_id) REFERENCES category(id)
 );
 
-DELETE FROM program;
-DELETE FROM category;
-
 INSERT INTO category (id, name) VALUES (1, "Comédie"), (2, "Science-Fiction");
 
 INSERT INTO program (title, synopsis, poster, country, year, category_id) VALUES
